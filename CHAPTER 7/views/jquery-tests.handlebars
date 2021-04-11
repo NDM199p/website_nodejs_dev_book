@@ -1,0 +1,11 @@
+{{#section 'heade'}}
+	<!-- we want Google to ignore this page -->
+	<meta name="robots" content="noindex">
+    <link rel="stylesheet" href="style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/↵handlebars.min.js"></script>
+{{/section}}
+
+<h1>Test Page</h1>
+<p>We're testing some jQuery stuff.</p>
+
+{{#section 'jquery'}}<script>$('document').ready(function(){$('h1').html('jQuery Works');});</script>{{/section}}
