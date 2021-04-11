@@ -11,14 +11,29 @@ app.use(express.static(__dirname + '/public'));
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
+app.set('port', process.env.PORT || 3000);
+
+
+
+// page test
 app.use((req, res, next) =>
 {
     res.locals.showTests = app.get('env') !== 'production' && req.query.test === '1';
     next();
 });
 
-app.set('port', process.env.PORT || 3000);
+// cross page testing
+app.get('/tours/hood-river', (req, res) =>
+{
+    res.render('tours/hood-river');
+});
 
+app.get('/tours/request-group-rate', (req, res) =>
+{
+    res.render('tours/request-group-rate');
+});
+
+// ---------------
 app.get('/', (req, res) =>
 {
     res.render('home');
