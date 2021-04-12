@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+</head>
+<body>
+    {{#if flash}}
+        <div>
+            <button type="button" aria-hidden="true">
+                &times;
+            </button>
+            <strong>{{flash.intro}}</strong>
+            <strong>{{flash.message}}</strong>
+        </div>
+    {{/if}}
+    {{{body}}}
+</body>
+</html>
