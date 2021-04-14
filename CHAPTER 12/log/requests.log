@@ -1,0 +1,2 @@
+::ffff:127.0.0.1 - - [Wed, 14 Apr 2021 03:32:36 GMT] "GET / HTTP/1.1" 200 10 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0"
+::ffff:127.0.0.1 - - [Wed, 14 Apr 2021 03:32:36 GMT] "GET /favicon.ico HTTP/1.1" 404 309 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0"
