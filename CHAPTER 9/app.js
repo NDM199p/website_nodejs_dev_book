@@ -7,7 +7,8 @@ var app = express();
 app.use(require('body-parser')());
 
 // cookie-parse
-app.use(require('cookie-parser')(credentials.cookiesSecret))
+app.use(require('cookie-parser')(credentials.cookiesSecret));
+
 // express-session
 app.use(require('express-session')());
 

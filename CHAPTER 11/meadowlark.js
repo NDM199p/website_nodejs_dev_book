@@ -73,7 +73,9 @@ app.get('/tours/request-group-rate', (req, res) =>
 // ---------------
 app.get('/', (req, res) =>
 {
-    res.render('home');
+    // res.render('home');
+    res.send(app.get('env'));
+    console.log(app.get('env'));
 });
 
 app.get('/about', (req, res) =>
@@ -88,7 +90,7 @@ app.get('/send-email', function(req, res)
 {
     mailTransport.sendMail(
         {
-            from: '"Meadowlark Travel" <info@meadowlarktravel.com>',
+            from: 'nmy.qw.qa.qz@gmail.com',
             to:'nguyenmy0147258369@gmail.com',
             subject: 'Your Meadowlark Travel Tour',
             text: 'Thank you for booking your trip with Meadowlark Travel. We look forward to visit!'

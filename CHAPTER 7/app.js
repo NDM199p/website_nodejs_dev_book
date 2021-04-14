@@ -25,8 +25,7 @@ app.set('port', process.env.PORT || 3000);
 
 function getWeatherData()
 {
-    return 
-    {
+    return {
         locations: 
         [
             {
